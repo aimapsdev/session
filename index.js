@@ -107,7 +107,7 @@ function session(options){
     driverOptions.saveUninitializedSession = true;
   }
 
-  if (opts.unset && opts.unset !== 'destroy' && opts.unset !== 'keep') {
+  if (options.unset && options.unset !== 'destroy' && options.unset !== 'keep') {
     throw new TypeError('unset option must be "destroy" or "keep"');
   }
 
