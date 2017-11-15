@@ -9,6 +9,8 @@ var defer = typeof setImmediate === 'function'
 
 module.exports = function(store, options) {
 
+  console.log("HEADER DRIVER CALLED");
+
 	return function(req, res, next) {
     // self-awareness
     if (req.session) return next();

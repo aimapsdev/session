@@ -137,7 +137,7 @@ function session(options){
   store.generate = function(req){
     req.sessionID = generateId(req);
     req.session = new Session(req);
-	req.session.cookie = new Cookie(driverOptions.cookie);
+	  req.session.cookie = new Cookie(driverOptions.cookie);
   };
 
   driverOptions.storeImplementsTouch = typeof store.touch === 'function';
